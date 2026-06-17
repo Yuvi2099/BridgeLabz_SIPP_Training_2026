@@ -24,7 +24,6 @@ public class YoungestAndTallest {
         System.out.print("Enter Anthony's height: ");
         double anthonyHeight = sc.nextDouble();
 
-        // Youngest
         if (amarAge < akbarAge && amarAge < anthonyAge) {
             System.out.println("Youngest Friend: Amar");
         } else if (akbarAge < amarAge && akbarAge < anthonyAge) {
@@ -33,7 +32,6 @@ public class YoungestAndTallest {
             System.out.println("Youngest Friend: Anthony");
         }
 
-        // Tallest
         if (amarHeight > akbarHeight && amarHeight > anthonyHeight) {
             System.out.println("Tallest Friend: Amar");
         } else if (akbarHeight > amarHeight && akbarHeight > anthonyHeight) {
