@@ -1,4 +1,4 @@
-package CoreJavaPractice.Scenario_Based;
+package CoreJavaPractice.Core_Java.Scenario_Based;
 public class Ravi_Bonus {
     public static void main(String[] args){
         String name = "Ravi";
