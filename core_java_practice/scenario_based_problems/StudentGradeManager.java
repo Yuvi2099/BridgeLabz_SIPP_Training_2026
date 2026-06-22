@@ -146,9 +146,7 @@ public class StudentGradeManager {
             bw.write("Name: " + names[i]);
             bw.write("\nTotal Marks: " + totals[i]);
             bw.write("\nGrade: " + grades[i]);
-            bw.write("\n--------------------------\n");
         }
-
         bw.close();
     }
 }
