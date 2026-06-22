@@ -16,7 +16,6 @@ public class StudentGradeManager {
             System.out.println("Students Loaded Successfully!\n");
 
             sortByTotalMarks();
-
             Scanner sc = new Scanner(System.in);
 
             System.out.print("Enter student name to search: ");
@@ -40,9 +39,7 @@ public class StudentGradeManager {
     public static void readStudentData(String filename) throws IOException {
 
         BufferedReader br = new BufferedReader(new FileReader(filename));
-
         String line;
-
         while ((line = br.readLine()) != null) {
 
             String[] data = line.split("\\s+");
@@ -68,7 +65,6 @@ public class StudentGradeManager {
     public static char calculateGrade(int avg) {
 
         if (avg >= 60) {
-
             if (avg >= 90)
                 return 'A';
             else if (avg >= 75)
@@ -77,7 +73,6 @@ public class StudentGradeManager {
                 return 'C';
 
         } else {
-
             if (avg >= 50)
                 return 'D';
             else
@@ -85,28 +80,21 @@ public class StudentGradeManager {
         }
     }
     public static void searchStudent(String name) {
-
         boolean found = false;
-
         for (int i = 0; i < count; i++) {
-
             if (names[i].equalsIgnoreCase(name)) {
-
                 System.out.println("\nStudent Found:");
                 System.out.println("Name : " + names[i]);
                 System.out.println("Total Marks : " + totals[i]);
                 System.out.println("Grade : " + grades[i]);
-
                 found = true;
                 break;
             }
         }
-
         if (!found) {
             System.out.println("Student not found.");
         }
     }
-
     public static void sortByTotalMarks() {
 
         for (int i = 0; i < count - 1; i++) {
@@ -147,6 +135,7 @@ public class StudentGradeManager {
             bw.write("\nTotal Marks: " + totals[i]);
             bw.write("\nGrade: " + grades[i]);
         }
+        
         bw.close();
     }
 }
