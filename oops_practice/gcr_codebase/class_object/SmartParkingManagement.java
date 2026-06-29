@@ -1,6 +1,4 @@
 package oops_practice.gcr_codebase.class_object;
-package oops_practice.gcr_codebase.class_object.scenario_based_problem;
-
 class Vehicle {
 
     private String vehicleNumber;
